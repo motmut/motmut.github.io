@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>MiawTip.co - Kirim Tip</title>
+</head>
+<body bgcolor="#aed6f1">
+
+    <!-- Header / Navigasi Utama -->
+    <header>
+        <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td align="left">
+                    <a href="index.html" style="text-decoration: none; color: black;"><h2>MiawTip.co</h2></a>
+                </td>
+                <td align="right">
+                    <a href="login.html"><button type="button">LOGIN</button></a>
+                    <a href="daftar.html" style="text-decoration: none; color: black; font-weight: bold; margin-left: 10px;">Daftar</a>
+                </td>
+            </tr>
+        </table>
+        <hr align="center" width="100%" color="black" size="2">
+    </header>
+
+    <br><br>
+
+    <!-- Form Donasi Utama -->
+    <main>
+        <center>
+            <table border="1" cellpadding="20" cellspacing="0" width="450" bgcolor="#f0f8ff">
+                <tr>
+                    <td>
+                        <form action="konfirmasi.html" method="POST">
+                            
+                            <!-- Judul Form -->
+                            <h2 align="center">Tip</h2>
+
+                            <!-- Input Dari / Pengirim -->
+                            <p>
+                                <label for="dari"><b>Dari</b></label><br>
+                                <input type="text" id="dari" name="pengirim" placeholder="Nama kamu / Anonim" required style="width: 95%; padding: 8px; margin-top: 5px;">
+                            </p>
+
+                            <!-- Input Email -->
+                            <p>
+                                <label for="email"><b>Email</b></label><br>
+                                <input type="email" id="email" name="email" placeholder="Masukkan email" required style="width: 95%; padding: 8px; margin-top: 5px;">
+                            </p>
+
+                            <!-- Input Pesan -->
+                            <p>
+                                <label for="pesan"><b>Pesan</b></label><br>
+                                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan dukunganmu..." style="width: 95%; padding: 8px; margin-top: 5px; background-color: #3182ce; color: white;"></textarea>
+                            </p>
+
+                            <!-- Selection / Nominal Tip -->
+                            <p>
+                                <label for="jumlah"><b>Jumlah Tip</b></label><br>
+                                <input type="number" id="jumlah" name="jumlah_tip" placeholder="Masukkan nominal (Rp)" required style="width: 95%; padding: 8px; margin-top: 5px; margin-bottom: 10px;">
+                            </p>
+
+                            <!-- Pilihan Cepat Nominal -->
+                            <p align="center">
+                                <button type="button" style="background-color: #3182ce; color: white; border: none; padding: 6px 10px; margin: 2px; border-radius: 12px; cursor: pointer;">IDR 5.000 🐱</button>
+                                <button type="button" style="background-color: #3182ce; color: white; border: none; padding: 6px 10px; margin: 2px; border-radius: 12px; cursor: pointer;">IDR 10.000 🍞</button>
+                                <button type="button" style="background-color: #3182ce; color: white; border: none; padding: 6px 10px; margin: 2px; border-radius: 12px; cursor: pointer;">IDR 20.000 ☕</button>
+                                <br>
+                                <button type="button" style="background-color: #3182ce; color: white; border: none; padding: 6px 10px; margin: 2px; border-radius: 12px; cursor: pointer;">IDR 50.000 🍗</button>
+                                <button type="button" style="background-color: #3182ce; color: white; border: none; padding: 6px 10px; margin: 2px; border-radius: 12px; cursor: pointer;">IDR 100.000 💸</button>
+                            </p>
+
+                            <br>
+
+                            <!-- Metode Pembayaran -->
+                            <p>
+                                <label><b>Metode Pembayaran :</b></label>
+                            </p>
+                            <table width="100%" border="0" cellspacing="5">
+                                <tr align="center">
+                                    <td width="33%" bgcolor="#3182ce" style="padding: 10px; color: white; font-weight: bold;">
+                                        <input type="radio" id="gopay" name="metode" value="gopay">
+                                        <label for="gopay">gopay</label>
+                                    </td>
+                                    <td width="34%" bgcolor="#3182ce" style="padding: 10px; color: white; font-weight: bold;">
+                                        <input type="radio" id="qris" name="metode" value="qris" checked>
+                                        <label for="qris">QRIS</label>
+                                    </td>
+                                    <td width="33%" bgcolor="#3182ce" style="padding: 10px; color: white; font-weight: bold;">
+                                        <input type="radio" id="dana" name="metode" value="dana">
+                                        <label for="dana">DANA</label>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <br><br>
+
+                            <!-- Tombol Confirm -->
+                            <p align="center">
+                                <button type="submit" style="width: 50%; padding: 10px; background-color: #2b6cb0; color: white; border: none; font-weight: bold; font-size: 16px; cursor: pointer; border-radius: 5px;">
+                                    CONFIRM
+                                </button>
+                            </p>
+
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </main>
+
+</body>
+</html>

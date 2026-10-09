@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>MiawTip.co - Konfirmasi Donasi</title>
+</head>
+<body bgcolor="#aed6f1">
+
+    <!-- Header / Navigasi Utama -->
+    <header>
+        <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td align="center">
+                    <a href="index.html" style="text-decoration: none; color: black;"><h2>MiawTip.co</h2></a>
+                </td>
+            </tr>
+        </table>
+        <hr align="center" width="100%" color="black" size="2">
+    </header>
+
+    <br><br>
+
+    <!-- Form Konfirmasi Donasi Utama -->
+    <main>
+        <center>
+            <table border="0" cellpadding="20" cellspacing="0" width="380" bgcolor="#e6f2ff" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.15);">
+                <tr>
+                    <td align="center">
+                        <form action="berhasil.html" method="POST">
+                            
+                            <!-- Judul Form -->
+                            <h3 align="center" style="margin-bottom: 20px;">KONFIRMASI DONASI</h3>
+
+                            <!-- MiawTor (Penerima) -->
+                            <p>
+                                <label for="miawtor"><b>MiawTor</b></label><br>
+                                <input type="text" id="miawtor" name="miawtor" value="Kreator A" readonly style="width: 80%; padding: 6px; margin-top: 5px; text-align: center; background-color: #808080; color: white; border: none; border-radius: 4px;">
+                            </p>
+
+                            <!-- Username (Pengirim) -->
+                            <p>
+                                <label for="username"><b>Username</b></label><br>
+                                <input type="text" id="username" name="username" value="User123" readonly style="width: 80%; padding: 6px; margin-top: 5px; text-align: center; background-color: #808080; color: white; border: none; border-radius: 4px;">
+                            </p>
+
+                            <!-- Nominal -->
+                            <p>
+                                <label for="nominal"><b>Nominal</b></label><br>
+                                <input type="text" id="nominal" name="nominal" value="Rp 20.000" readonly style="width: 60%; padding: 6px; margin-top: 5px; text-align: center; background-color: #808080; color: white; border: none; border-radius: 4px;">
+                            </p>
+
+                            <!-- Pesan -->
+                            <p>
+                                <label for="pesan"><b>Pesan</b></label><br>
+                                <textarea id="pesan" name="pesan" rows="4" readonly style="width: 90%; padding: 8px; margin-top: 5px; background-color: #3182ce; color: white; border: none; border-radius: 6px; resize: none;">Semangat terus berkarya!</textarea>
+                            </p>
+
+                            <br>
+
+                            <!-- Tombol Kembali & Konfirmasi -->
+                            <table width="90%" border="0">
+                                <tr>
+                                    <td align="center" width="50%">
+                                        <a href="tip.html">
+                                            <button type="button" style="width: 90%; padding: 8px; background-color: #3182ce; color: white; border: none; font-weight: bold; cursor: pointer; border-radius: 4px;">
+                                                Kembali
+                                            </button>
+                                        </a>
+                                    </td>
+                                    <td align="center" width="50%">
+                                        <button type="submit" style="width: 90%; padding: 8px; background-color: #3182ce; color: white; border: none; font-weight: bold; cursor: pointer; border-radius: 4px;">
+                                            Konfirmasi
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </main>
+
+</body>
+</html>
